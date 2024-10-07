@@ -11,8 +11,6 @@ namespace ApiWithRoles.Data
         {
             
         }
-        public DbSet<Login> logins { get; set; }
-        public DbSet<Register> registers { get; set; }
-        public DbSet<UserRole> userRoles { get; set; }
+
     }
 }

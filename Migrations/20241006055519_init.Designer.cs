@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ApiWithRoles.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20241006015244_Init")]
-    partial class Init
+    [Migration("20241006055519_init")]
+    partial class init
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
