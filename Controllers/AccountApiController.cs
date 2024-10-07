@@ -41,7 +41,7 @@ namespace ApiWithRoles.Controllers
         [HttpPost("login")]
         public async Task<IActionResult> Login([FromBody] Login model)
         {
-            var user = await _userManager.FindByEmailAsync(model.Username);
+            var user = await _userManager.FindByNameAsync(model.Username);
             if(user != null && await _userManager.CheckPasswordAsync(user, model.Password))
             {
                 var userRoles = await _userManager.GetRolesAsync(user);
